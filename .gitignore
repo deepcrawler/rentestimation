@@ -5,3 +5,5 @@ TypeScript/**/*.map
 typings/
 .DS_Store 
 /**/.DS_Store
+build
+package-lock.json

@@ -3,5 +3,5 @@ node_modules/
 TypeScript/**/*.js
 TypeScript/**/*.map
 typings/
-.DS_Store
+.DS_Store 
 /**/.DS_Store

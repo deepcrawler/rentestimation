@@ -1,0 +1,1 @@
+SELECT avg(rent::decimal/apartment_size) FROM ${schema~}.rents WHERE deleted=false and zip_code = $1

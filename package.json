@@ -1,0 +1,45 @@
+{
+  "name": "rentestimation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Build/index.js",
+  "author": {
+    "name": "Hamed Ghaderipour",
+    "email": "hamedghp@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcrawler/rentestimation.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepcrawler/rentestimation/issues"
+  },
+  "homepage": "https://github.com/deepcrawler/rentestimation#readme",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=2.15"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "fast-csv": "^3.0.1",
+    "moment": "^2.24.0",
+    "node-cron": "^2.0.3",
+    "pg-promise": "8.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "10.12.0",
+    "chai": "^4.2.0",
+    "cpx": "^1.5.0",
+    "mocha": "^6.1.4",
+    "typescript": "^3.1.3"
+  },
+  "scripts": {
+    "test": "npm run build && mocha tests --reporter spec",
+    "tsc": "tsc",
+    "dev-start": "node ./build/index.js",
+    "copy": "cpx 'src/**/*.{sql,csv}' build",
+    "build": "npm run tsc && npm run copy",
+    "start": "npm run build && npm run dev-start"
+  }
+}

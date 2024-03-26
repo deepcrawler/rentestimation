@@ -21,7 +21,7 @@
     "npm": ">=2.15"
   },
   "dependencies": {
-    "express": "4.16.4",
+    "express": "4.19.2",
     "fast-csv": "^3.0.1",
     "moment": "^2.24.0",
     "node-cron": "^2.0.3",
